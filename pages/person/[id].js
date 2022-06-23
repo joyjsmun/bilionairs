@@ -18,14 +18,21 @@ export default function Detail(){
         <div className="Wrapper">
             <div className="container">
                 <img src={person?.squareImage} />
-                <h3>{router.query.name}</h3>
+                <h2>{router.query.name}</h2>
                 <h4>Networth:{String(person?.netWorth).slice(0,3)} billion</h4>
                 <h4>Country:{person?.country}</h4>
                 <h4>Industry:{person?.industries? person.industries[0] : null }</h4>
                 <p>{person?.bio?.map(content => <span key={content.length}>{content}</span>)}</p>
             </div>
-            <div className="assets">
-                <h3>Financian Assets</h3>
+            <div className="container">
+                <h2 className="assetsTitle">Financian Assets</h2>
+               <div className="assetsKind">
+               {person.financialAssets?.map(item => <div className="ticker" key={item.companyName}>
+                    <div>Ticker : {item?.ticker}</div>
+                    <div>Shares : {item?.numberOfShares}</div>
+                    <div>Excersie Price : ${item?.sharePrice}</div>
+                </div>)}
+               </div>
             </div>
             <style jsx>{`
         .Wrapper{
@@ -43,8 +50,31 @@ export default function Detail(){
             line-height:25px;
         }
 
+        .container:last-child{
+            margin-top:100px;
+            
+        }
+
         .container img{
             margin-bottom:50px;
+        }
+
+        .assetsTitle{
+            display: block;
+            font-weight: 700;
+            margin-bottom:30px;
+        }
+
+        .assetsKind{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:50px;
+        }
+
+        .ticker {
+            padding: 20px;
+            border-radius:10px;
+            border: 1px solid rgba(82,51,158,1);
         }
             `}</style>
         </div>

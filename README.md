@@ -3,7 +3,7 @@
 Using Next.js and style jsx.
 
 - [x] NavBar - Routing & styling
-- [ ] NavBar - Show location of page
+- [x] NavBar - Show location of page
 
 - [x] Head - Adding each page
 - [x] SEO - Head title
@@ -12,7 +12,7 @@ Using Next.js and style jsx.
 - [x] Home - List Styling
 - [x] Home - Undefined img issue
 
-- [ ] Detail - Data fetching ; Item detail
+- [x] Detail - Data fetching ; Item detail
 - [ ] Logo / Head - svg 
 - [x] Footer 
 
