@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import SEO from "./components/Seo";
 
@@ -6,6 +7,7 @@ const FAKEIMG = "https://specials-images.forbesimg.com/imageserve/6050f48ca1ab09
 
 export default function Home() {
   const [list, setList] = useState([]);
+  const router = useRouter();
 
 
  useEffect(() => {
@@ -17,11 +19,19 @@ export default function Home() {
    })()
  },[])
 
+ const personDetail = (id,name) => {
+   router.push({
+      pathname:`/person/${id}`,
+      query:{name}
+   })
+ }
+
   return (
     <div className="Wrapper">
       <SEO title="Home" />
       <div className="billionarsList">
-          {list?.map(item => <div className="person" key={item.id}>
+          {!list && <h4>...Loading</h4>}
+          {list?.map(item => <div onClick={() => personDetail(item.id,item.name)} className="person" key={item.id}>
             <img src={item.squareImage == "https:undefined" ? FAKEIMG : item.squareImage} />
             <div className="desc">
               <h3>{item.name}</h3>
@@ -41,7 +51,7 @@ export default function Home() {
         .billionarsList{
           display: grid;
           grid-template-columns: repeat(4,1fr);
-          grid-gap: 20px;
+          grid-gap: 30px;
           width: 100%;
           color:rgba(82, 51, 158, 1);
           
@@ -53,11 +63,23 @@ export default function Home() {
           cursor:pointer;
           background: rgba(82, 51, 158, 1);
           border-radius: 20px 20px 0px 0px;
+                 }
+
+        .person:hover{
+          transform: scale(1.1);
+          transition-timing-function: linear;
+          transition-delay: 0.2s;
+
         }
 
         .desc{
           color:white;
           padding:15px;
+        }
+        
+
+        .desc div{
+          color:white;
         }
 
         .person img{
