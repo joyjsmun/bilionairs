@@ -5,9 +5,10 @@ Using Next.js and style jsx.
 - [x] NavBar - Routing & styling
 - [ ] NavBar - Show location of page
 
-- [ ] Head - Adding each page
+- [x] Head - Adding each page
+- [ ] SEO - Head title
 
-- [ ] Home - Data fetching ; Billionairs list
+- [x] Home - Data fetching ; Billionairs list
 - [ ] Home - List Styling
 
 - [ ] Detail - Data fetching ; Item detail

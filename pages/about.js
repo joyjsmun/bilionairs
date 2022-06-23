@@ -1,11 +1,10 @@
 import Head from "next/head";
+import SEO from "./components/Seo";
 
 export default function about(){
     return(
         <>
-        <Head>
-            <title>About |  Billionairs</title>
-        </Head>
+        <SEO title="About" />
         </>
     )
 }

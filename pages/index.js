@@ -1,11 +1,10 @@
 import Head from "next/head";
+import SEO from "./components/Seo";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Home | Billionairs</title>
-      </Head>
+      <SEO title="Home" />
     </div>
   )
 }
