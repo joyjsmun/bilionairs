@@ -69,6 +69,7 @@ export default function Home() {
           transform: scale(1.1);
           transition-timing-function: linear;
           transition-delay: 0.2s;
+         
 
         }
 

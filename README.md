@@ -13,6 +13,6 @@ Using Next.js and style jsx.
 - [x] Home - Undefined img issue
 
 - [x] Detail - Data fetching ; Item detail
-- [ ] Logo / Head - svg 
+- [x] Logo / Head - svg 
 - [x] Footer 
 
