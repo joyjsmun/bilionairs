@@ -1,6 +1,8 @@
-#Bilionairs List
+# Bilionairs List
 
-Using Next.js and style jsx.
+- Using Next.js and style jsx.
+
+
 
 - [x] NavBar - Routing & styling
 - [x] NavBar - Show location of page
