@@ -1,5 +1,11 @@
+import Head from "next/head";
+
 export default function about(){
     return(
-        <div>about</div>
+        <>
+        <Head>
+            <title>About |  Billionairs</title>
+        </Head>
+        </>
     )
 }
