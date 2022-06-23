@@ -9,7 +9,8 @@ Using Next.js and style jsx.
 - [x] SEO - Head title
 
 - [x] Home - Data fetching ; Billionairs list
-- [ ] Home - List Styling
+- [x] Home - List Styling
+- [x] Home - Undefined img issue
 
 - [ ] Detail - Data fetching ; Item detail
 - [ ] Logo / Head - svg 
