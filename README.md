@@ -6,7 +6,7 @@ Using Next.js and style jsx.
 - [ ] NavBar - Show location of page
 
 - [x] Head - Adding each page
-- [ ] SEO - Head title
+- [x] SEO - Head title
 
 - [x] Home - Data fetching ; Billionairs list
 - [ ] Home - List Styling
