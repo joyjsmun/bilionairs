@@ -23,7 +23,7 @@ export default function Home() {
       <div className="billionarsList">
           {list?.map(item => <div className="person" key={item.id}>
             <img src={item.squareImage == "https:undefined" ? FAKEIMG : item.squareImage} />
-            <div>
+            <div className="desc">
               <h3>{item.name}</h3>
               <div>{item.industries[0]} / {String(item.netWorth).slice(0,3)} blillion</div>
             </div>
@@ -33,7 +33,9 @@ export default function Home() {
         .Wrapper{
           background: yellow;
           width: 100%;
-          padding:100px;
+          padding:200px;
+          background: black;
+
         }
 
         .billionarsList{
@@ -41,19 +43,30 @@ export default function Home() {
           grid-template-columns: repeat(4,1fr);
           grid-gap: 20px;
           width: 100%;
-          background: blue;
+          color:rgba(82, 51, 158, 1);
+          
         }
 
         .person {
           width: 100%;
+          margin-bottom:20px;
+          cursor:pointer;
+          background: rgba(82, 51, 158, 1);
+          border-radius: 20px 20px 0px 0px;
+        }
+
+        .desc{
+          color:white;
+          padding:15px;
         }
 
         .person img{
           background-size: cover;
+          background-position: center center;
           width: 100%;
-          border-radius: 20px;
+          border-radius: 20px 20px 0px 0px;
           margin-bottom: 0px;
-          border: 1px solid yellow;
+          border:1px solid rgba(82, 51, 158, 1);
           
         }
       `}</style>

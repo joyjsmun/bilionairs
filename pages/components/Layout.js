@@ -6,7 +6,7 @@ export default function Layout({children}){
       <div className="Wrapper">
         <NavBar />
         <div>{children}</div>
-        <FooterMenu />
+        {/* <FooterMenu /> */}
       </div>
     )
 }
