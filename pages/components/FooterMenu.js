@@ -8,6 +8,11 @@ export default function FooterMenu(){
                     display:flex;
                     flex-direction:column;
                     text-align:center;
+                    height: 100px;
+                    position: fixed;
+                    bottom:0;
+                    left:0;
+                    right:0;
                 }
                 h1{
                     margin:0;
