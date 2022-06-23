@@ -7,12 +7,14 @@ export default function FooterMenu(){
                 .footerContainer{
                     display:flex;
                     flex-direction:column;
-                    text-align:center;
-                    height: 100px;
+                    
                     position: fixed;
                     bottom:0;
                     left:0;
-                    right:0;
+                    right:10;
+                    color: white;
+                    writing-mode: vertical-rl;
+                    text-orientation: revert;
                 }
                 h1{
                     margin:0;
