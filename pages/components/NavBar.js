@@ -9,8 +9,8 @@ export default function NavBar(){
         <div className="NavBar">
             
            <h1><img className="logo" src="/money.svg" />Billionaires</h1>
-           <Link href="/">{route == "/" ? <h2 className="accent">Home<span className="dot"></span></h2> : <h2>Home</h2>}</Link>
-           <Link href="/about">{route == "/about" ? <h2 className="accent">About<span className="dot"></span></h2> : <h2>About</h2>}</Link>
+           <Link href="/">{route == "/" ? <h2 className="accent">Home<img className="logo_dot" src="/money.svg" /></h2> : <h2>Home</h2>}</Link>
+           <Link href="/about">{route == "/about" ? <h2 className="accent">About<img className="logo_dot" src="/money.svg" /></h2> : <h2>About</h2>}</Link>
            <style jsx>{`
                 .NavBar{
                     cursor:pointer;
@@ -39,6 +39,18 @@ export default function NavBar(){
                     width: 50px;
                     margin-right:10px;
                 }
+
+
+                .logo_dot{
+                    filter: invert(26%) sepia(15%) saturate(5482%) hue-rotate(232deg) brightness(92%) contrast(104%);
+                    width: 24px;
+                    height: 30px;
+                    position: absolute;
+                    top: 30px;
+                    left: 20px;
+                }
+
+
                 h2{
                     color: white !important;
                     text-decoration: none;

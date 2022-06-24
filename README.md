@@ -1,6 +1,6 @@
 # Bilionairs List
 
-### Using Next.js and style jsx.
+#### Using Next.js and style jsx.
 
 
 ## Dev Todos

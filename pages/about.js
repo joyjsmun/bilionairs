@@ -19,6 +19,12 @@ Still, Forbes found more than 1,000 billionaires who are richer than they were a
         height: 100vh;
         }
 
+        h3:first-letter {
+            text-transform: uppercase;
+            font-size:xxx-large;
+            color: rgba(82,51,158,1);
+        }
+
         .container{
             width: 100%;
             color: white;
